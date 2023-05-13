@@ -11044,3 +11044,92 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* 新しく追加する */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-img {
+  flex: 0 0 33.33%;
+  /* PC版では3枚ずつ */
+  max-width: 40%;
+  margin: 0 auto;
+  display: flex;
+}
+.item-img img{
+    /* max-height: 200px; */
+    height: 200px;
+}
+
+@media screen and (max-width: 900px) {
+  .item-img {
+    flex: 0 0 50%;
+    /* タブレット版では2枚ずつ */
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .item-img {
+    flex: 0 0 100%;
+    /* モバイル版では1枚ずつ */
+    max-width: 100%;
+  }
+}
+
+.portfolio-item{
+      flex: 0 0 33.33%;
+}
+
+.contact-wrap{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+text-align: center;
+}
+
+.contact-wrap img{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.skills{
+  margin: 0 auto;
+}
+
+.about-wrapper{
+  display: flex;
+}
+
+.about-content{
+width: 80%;
+margin: 0 auto;
+}

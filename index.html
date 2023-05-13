@@ -81,8 +81,8 @@
           alt="..."
         />
         <!-- Masthead Heading-->
-        <h1 class="masthead-heading text-uppercase mb-0">とらまる</h1>
-        <p class="mt-4">webサイト制作</p>
+        <h1 class="masthead-heading text-uppercase mb-0">しままる</h1>
+        <p class="mt-4">webサイト制作を承ります</p>
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
           <div class="divider-custom-line"></div>
@@ -95,12 +95,12 @@
     </header>
     <!-- Portfolio Section-->
     <section class="page-section portfolio" id="portfolio">
-      <div class="container">
+      <div class="container containers">
         <!-- Portfolio Section Heading-->
         <h2
-          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+          class="page-section-heading text-center text-uppercase text-secondary mb-0 skills"
         >
-          Portfolio
+          skills
         </h2>
         <!-- Icon Divider-->
         <div class="divider-custom">
@@ -109,7 +109,7 @@
           <div class="divider-custom-line"></div>
         </div>
         <!-- Portfolio Grid Items-->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" class="grid">
           <!-- Portfolio Item 1-->
           <div class="col-md-6 col-lg-4 mb-5">
             <div
@@ -126,7 +126,7 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="./img/html5.png" alt="..." />
+              <img class="img-fluid item-img" src="./img/html5.png" alt="..." />
             </div>
           </div>
           <!-- Portfolio Item 2-->
@@ -145,7 +145,7 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="./img/css.png" alt="..." />
+              <img class="img-fluid item-img" src="./img/css1.png" alt="..." />
             </div>
           </div>
           <!-- Portfolio Item 3-->
@@ -164,7 +164,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="./img/javascript.png" alt="..." />
+              <img
+                class="img-fluid item-img"
+                src="./img/free-javascript-2038874-1720087.png"
+                alt="..."
+              />
             </div>
           </div>
           <!-- Portfolio Item 4-->
@@ -183,7 +187,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="./img/jQuery.png" alt="..." />
+              <img
+                class="img-fluid item-img"
+                src="./img/jQuery.png"
+                alt="..."
+              />
             </div>
           </div>
           <!-- Portfolio Item 5-->
@@ -202,7 +210,7 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="./img/react.png" alt="..." />
+              <img class="img-fluid item-img" src="./img/react.png" alt="..." />
             </div>
           </div>
           <!-- Portfolio Item 6-->
@@ -221,7 +229,7 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="./img/wp.png" alt="..." />
+              <img class="img-fluid item-img" src="./img/wp.png" alt="..." />
             </div>
           </div>
         </div>
@@ -317,32 +325,16 @@
           <div class="divider-custom-line"></div>
         </div>
         <!-- About Section Content-->
-        <div class="row">
-          <div class="col-lg-4 ms-auto">
+        <div class="row about-content">
+          <!-- <div class="col-lg-4 ms-auto">
             <p class="lead">
-              Freelancer is a free bootstrap theme created by Start Bootstrap.
-              The download includes the complete source files including HTML,
-              CSS, and JavaScript as well as optional SASS stylesheets for easy
-              customization.
+              この度はサイトを訪問していただきありがとうございます。私の技術スタックはHTML,CSS,JavaScript,jQuery,React,WordPress,Git,GitHubs等になります。現在はフロントエンドエンジニアとして生活しております。
             </p>
           </div>
           <div class="col-lg-4 me-auto">
-            <p class="lead">
-              You can create your own custom avatar for the masthead, change the
-              icon in the dividers, and add your email address to the contact
-              form to make it fully functional!
-            </p>
-          </div>
-        </div>
-        <!-- About Section Button-->
-        <div class="text-center mt-4">
-          <a
-            class="btn btn-xl btn-outline-light"
-            href="https://startbootstrap.com/theme/freelancer/"
-          >
-            <i class="fas fa-download me-2"></i>
-            Free Download!
-          </a>
+            <p class="lead"></p>
+          </div> -->
+          この度はサイトを訪問していただきありがとうございます。私の持っている技術スタックとしましてはHTML,CSS,JavaScript,jQuery,React,WordPress,Git,GitHubs等になります。現在はフロントエンドエンジニアとして日々勉強中です。学習期間は2022年の3月からスタートいたしました。これまで10作以上のウェブサイトを作成してきました。
         </div>
       </div>
     </section>
@@ -353,7 +345,7 @@
         <h2
           class="page-section-heading text-center text-uppercase text-secondary mb-0"
         >
-          Contact Me
+          contact
         </h2>
         <!-- Icon Divider-->
         <div class="divider-custom">
@@ -371,102 +363,11 @@
             <!-- To make this form functional, sign up at-->
             <!-- https://startbootstrap.com/solution/contact-forms-->
             <!-- to get an API token!-->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-              <!-- Name input-->
-              <div class="form-floating mb-3">
-                <input
-                  class="form-control"
-                  id="name"
-                  type="text"
-                  placeholder="Enter your name..."
-                  data-sb-validations="required"
-                />
-                <label for="name">Full name</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  A name is required.
-                </div>
-              </div>
-              <!-- Email address input-->
-              <div class="form-floating mb-3">
-                <input
-                  class="form-control"
-                  id="email"
-                  type="email"
-                  placeholder="name@example.com"
-                  data-sb-validations="required,email"
-                />
-                <label for="email">Email address</label>
-                <div class="invalid-feedback" data-sb-feedback="email:required">
-                  An email is required.
-                </div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">
-                  Email is not valid.
-                </div>
-              </div>
-              <!-- Phone number input-->
-              <div class="form-floating mb-3">
-                <input
-                  class="form-control"
-                  id="phone"
-                  type="tel"
-                  placeholder="(123) 456-7890"
-                  data-sb-validations="required"
-                />
-                <label for="phone">Phone number</label>
-                <div class="invalid-feedback" data-sb-feedback="phone:required">
-                  A phone number is required.
-                </div>
-              </div>
-              <!-- Message input-->
-              <div class="form-floating mb-3">
-                <textarea
-                  class="form-control"
-                  id="message"
-                  type="text"
-                  placeholder="Enter your message here..."
-                  style="height: 10rem"
-                  data-sb-validations="required"
-                ></textarea>
-                <label for="message">Message</label>
-                <div
-                  class="invalid-feedback"
-                  data-sb-feedback="message:required"
-                >
-                  A message is required.
-                </div>
-              </div>
-              <!-- Submit success message-->
-              <!---->
-              <!-- This is what your users will see when the form-->
-              <!-- has successfully submitted-->
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
-                  <div class="fw-bolder">Form submission successful!</div>
-                  To activate this form, sign up at
-                  <br />
-                  <a href="https://startbootstrap.com/solution/contact-forms"
-                    >https://startbootstrap.com/solution/contact-forms</a
-                  >
-                </div>
-              </div>
-              <!-- Submit error message-->
-              <!---->
-              <!-- This is what your users will see when there is-->
-              <!-- an error submitting the form-->
-              <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">
-                  Error sending message!
-                </div>
-              </div>
-              <!-- Submit Button-->
-              <button
-                class="btn btn-primary btn-xl disabled"
-                id="submitButton"
-                type="submit"
-              >
-                Send
-              </button>
-            </form>
+            <div class="contact-wrap">
+              <a href="https://twitter.com/jebstrik">
+                <img src="./img/twitter-logo.jpg" alt="" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -474,8 +375,7 @@
     <!-- Footer-->
     <footer class="footer text-center">
       <div class="container">
-        <div class="row">
-          <!-- Footer Location-->
+        <!-- <div class="row">
           <div class="col-lg-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Location</h4>
             <p class="lead mb-0">
@@ -484,7 +384,6 @@
               Clark, MO 65243
             </p>
           </div>
-          <!-- Footer Social Icons-->
           <div class="col-lg-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Around the Web</h4>
             <a class="btn btn-outline-light btn-social mx-1" href="#!"
@@ -500,7 +399,6 @@
               ><i class="fab fa-fw fa-dribbble"></i
             ></a>
           </div>
-          <!-- Footer About Text-->
           <div class="col-lg-4">
             <h4 class="text-uppercase mb-4">About Freelancer</h4>
             <p class="lead mb-0">
@@ -510,7 +408,7 @@
               .
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </footer>
     <!-- Copyright Section-->
@@ -546,7 +444,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Log Cabin
+                    HTML使用のWebサイト
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
@@ -565,15 +463,11 @@
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+                    htmlで作成したウェブサイトとなっております。<br />
+                    このようなシンプルな構成のサイトでしたら、比較的短期間で納品することが可能です。
                   </p>
                   <button class="btn btn-primary" data-bs-dismiss="modal">
-                    <i class="fas fa-xmark fa-fw"></i>
-                    Close Window
+                    <a href="https://profile-site-orcin.vercel.app/"></a>
                   </button>
                 </div>
               </div>
@@ -608,7 +502,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Tasty Cake
+                    CSSによるサイトの装飾
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
@@ -619,20 +513,14 @@
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image-->
-                  <a href="https://fitness-site-nine.vercel.app/">
-                    <img
-                      class="img-fluid rounded mb-5"
-                      src="./img/portfolio2.png"
-                      alt="..."
-                    />
-                  </a>
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="./img/portfolio3.png"
+                    alt="..."
+                  />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+                    CSSによってウェブサイトに装飾を加えることができます。CSSの追加のプラグインとしてSCSSやSASSの使用によってより可読性と保守性の高いサイトを作ることができます。BEM記法に則ってサイトを構築することができます。
                   </p>
                   <button class="btn btn-primary" data-bs-dismiss="modal">
                     <i class="fas fa-xmark fa-fw"></i>
@@ -684,20 +572,18 @@
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="./img/portfolio3.png"
+                    src="./img/todo-app-sites.png"
                     alt="..."
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+                    JavaScriptによってTODOアプリなどを作成することができます。ウェブサイトに必要な動きはJavaScriptによって実装いたします。
                   </p>
                   <button class="btn btn-primary" data-bs-dismiss="modal">
-                    <i class="fas fa-xmark fa-fw"></i>
-                    Close Window
+                    <a
+                      href="https://shimamaru.github.io/shimamaru-frontend-basic-2022-todoapp/"
+                      >サイトに進む</a
+                    >
                   </button>
                 </div>
               </div>
@@ -745,20 +631,19 @@
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/portfolio/game.png"
+                    src="./img/portfolio2.png"
                     alt="..."
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+                    jQueryを使用した動きのあるウェブサイトを作ることができます。sliderをはじめとするモジュールをCDNで持ってきて動きをつけることが可能になります。動きのない作品よりも納期に時間がかかる場合がございます。
                   </p>
                   <button class="btn btn-primary" data-bs-dismiss="modal">
-                    <i class="fas fa-xmark fa-fw"></i>
-                    Close Window
+                    <!-- <i class="fas fa-xmark fa-fw"></i>
+                    Close Window -->
+                    <a href="https://fitness-site-nine.vercel.app/"
+                      >サイトに進む</a
+                    >
                   </button>
                 </div>
               </div>
@@ -793,7 +678,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Locked Safe
+                    Reactによる作成
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
@@ -806,20 +691,17 @@
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/portfolio/safe.png"
+                    src="./img/pokemon-api.png"
                     alt="..."
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+                    Reactによってアプリケーションの作成することが可能です。Reactで作成することによってコードの保守性や可読性が上がり、また仮想DOMの使用によりWebサイトの更新速度がマークアップで書いた時よりも格段に向上します。
                   </p>
                   <button class="btn btn-primary" data-bs-dismiss="modal">
-                    <i class="fas fa-xmark fa-fw"></i>
-                    Close Window
+                    <a href="https://pokemons-henna.vercel.app/"
+                      >サイトに進む</a
+                    >
                   </button>
                 </div>
               </div>
@@ -854,7 +736,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Submarine
+                    WordPressによるサイト作成
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
@@ -867,20 +749,15 @@
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/portfolio/submarine.png"
+                    src="./img/wp-site.png"
                     alt="..."
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+                    WordPressによるサイト作成を行うことができます。WordPressによってサイトの作成することによって、サイトを作成後もクラインアントさん側が使いやすく運用のしやすいサイトを作ることができます。
                   </p>
                   <button class="btn btn-primary" data-bs-dismiss="modal">
-                    <i class="fas fa-xmark fa-fw"></i>
-                    Close Window
+                    <a href="https://www.kkkkitchen.online/">サイトへ進む</a>
                   </button>
                 </div>
               </div>

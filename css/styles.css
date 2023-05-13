@@ -11046,7 +11046,7 @@ html {
 }
 
 /* 新しく追加する */
-
+/* 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -11068,7 +11068,7 @@ html {
   .grid-container {
     grid-template-columns: 1fr;
   }
-}
+} */
 
 .containers {
   display: flex;
@@ -11132,4 +11132,23 @@ text-align: center;
 .about-content{
 width: 80%;
 margin: 0 auto;
+}
+
+.modal-link{
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-text{
+  text-align: center;
+}
+
+.message-wrap{
+  width: 90%;
+  margin: 0 auto;
 }
